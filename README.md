@@ -126,8 +126,11 @@ Follow the methodology outlined in the **Methodology** section to execute the pi
 ![Pairwise](./Outputs/Phylo_analysis/orthologus_analysis.png)
 
 ##### Comparative Genomics
+##### Whole-Genome Alignment
 ![Alignment](./Outputs/comp_genomics/Alignment.png)
 
+
+##### SNPs and INDELs Distribution
 ![Snippy Results](./Outputs/comp_genomics/SNPS_distribution.png)
 --
 
