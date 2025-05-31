@@ -1,0 +1,27 @@
+# Tools required for this NGS Pipeline
+# Quality Control Tools
+There are several Tools that perfom Quality Control for genome assemblies;
+-QUAST : this is a Quality Assesment Tool for Genome assemblies
+-Busco : assesses the completenes of a genome assemby basically stands for Benchmarking Univeral Single-Copy Orthologs
+
+# Genome Scaffolding
+-RagTag : improves the completenes and contiguity of the genome assemblies
+
+# Repeat Masking
+-RepeatMasker : mask out the repeat regions within a genome assemblies. Hard or soft masking can be employed
+
+# Gene Prediction
+-augustus : identifying the coding sequences,Protein sequences and gene feature files that specify (introns, exons)
+
+# Functional Annotation
+To give biological meaning and function of the predicted genes
+-EggNog-Mapper : perfoms functional Annotation
+
+# Phylogenetic Analysis
+-OrthoFinder : identifying orthologous genes from the genome assemblies
+-MAFFT : perfom multiple sequence alignment of the Single-copy orthologous sequences produced
+-FastTree : build Phylogenetic trees 
+
+# Comparative Genomics
+-MuMMer : perfom whole genome alignment using a reference genome
+-Snippy : perfom variant calling to identify snps and indels, snps can be used as Moleular Markers 

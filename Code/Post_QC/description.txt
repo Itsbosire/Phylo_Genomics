@@ -1,0 +1,2 @@
+# The essence of perfoming Post quality control analysis using Busco, Quast and Multiqc 
+# is to assess the Impact of scaffolding performed by RagTag
