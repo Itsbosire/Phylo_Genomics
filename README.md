@@ -3,7 +3,7 @@
 
 ## 🧬 Overview
 
-This project explores the genetic diversity and evolutionary relationships of *Puccinia graminis* f. sp. *tritici* — the fungal pathogen responsible for wheat stem rust. Through comparative genomics and phylogenetic inference, the study aims to shed light on genomic factors contributing to its pathogenicity and adaptation. This work is pivotal in enhancing our understanding of disease evolution and could support future strategies in disease management and resistance breeding in wheat.
+This project explores the genetic diversity and evolutionary relationships of *Puccinia graminis* f.sp. *tritici* — the fungal pathogen responsible for wheat stem rust. Through comparative genomics and phylogenetic inference, the study aims to shed light on genomic factors contributing to its pathogenicity and adaptation. This work is pivotal in enhancing our understanding of disease evolution and could support future strategies in disease management and resistance breeding in wheat.
 
 ---
 
@@ -103,32 +103,32 @@ Follow the methodology outlined in the **Methodology** section to execute the pi
 - **MUMmer**: Conducted whole-genome alignment across strains to detect large-scale structural variations.
 - **Snippy**: Performed variant calling to identify SNPs and INDELs.
 
-![Methodology](../Genomics/Outputs/Research_design.png)
+![Methodology](./Outputs/Research_design.png)
 ---
 
 ---
 #### 📊 Results
 ##### Quality Control
-![Busco Results](../Genomics/Outputs/Quality_Control/busco_results/Busco_summary.png)
+![Busco Results](./Outputs/Quality_Control/busco_results/Busco_summary.png)
 ---
 ##### Phylogenetic Analysis
-![Phylogenetic Tree](../Genomics/Outputs/Phylo_analysis/phylo_tree.png)
+![Phylogenetic Tree](./Outputs/Phylo_analysis/phylo_tree.png)
 
-![Evoution](../Genomics/Outputs/Phylo_analysis/evolution_tree_phylo.png)
+![Evoution](./Outputs/Phylo_analysis/evolution_tree_phylo.png)
 
 ##### Genome Clustering and Ortholog Analysis
-![Clustering](../Genomics/Outputs/Phylo_analysis/cluster-venn.png)
+![Clustering](./Outputs/Phylo_analysis/cluster-venn.png)
 
-![Venn](../Genomics/Outputs/Phylo_analysis/ortholo_analysis.png)
+![Venn](./Outputs/Phylo_analysis/ortholo_analysis.png)
 
-![cluster count](../Genomics/Outputs/Phylo_analysis/UpSetJS.png)
+![cluster count](./Outputs/Phylo_analysis/UpSetJS.png)
 
-![Pairwise](../Genomics/Outputs/Phylo_analysis/orthologus_analysis.png)
+![Pairwise](./Outputs/Phylo_analysis/orthologus_analysis.png)
 
 ##### Comparative Genomics
-![Alignment](../Genomics/Outputs/comp_genomics/Alignment.png)
+![Alignment](./Outputs/comp_genomics/Alignment.png)
 
-![Snippy Results](../Genomics/Outputs/comp_genomics/SNPS_distribution.png)
+![Snippy Results](./Outputs/comp_genomics/SNPS_distribution.png)
 --
 
 ## 📚 References
