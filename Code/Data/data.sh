@@ -1,3 +1,7 @@
 # Downloading the data sets from NCBI
+# Install ncbi genome download
+pip install ncbi-genome-download
 
-wget https://www.ncbi.nlm.nih.gov/datasets/genome/?taxon=5297
+# Download the genomes from the database
+# Compile accessions numbers in a file
+ncbi-genome-download fungi --assembly-accessions accessions.txt --output-folder puccinia_genomes
