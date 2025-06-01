@@ -1,3 +1,5 @@
+#!/usr/bin/env/bash
+
 # Downloading the data sets from NCBI
 # Install ncbi genome download
 pip install ncbi-genome-download
