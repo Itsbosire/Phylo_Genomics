@@ -1,5 +1,10 @@
 # Comparative Genomics and Phylogenetic Analysis of *Puccinia graminis* *f.sp* *tritici* in Wheat  
+
 # Understanding the Genetic Basis of Pathogenicity
+
+Project Report can be found here: [Project Report](https://drive.google.com/file/d/1klyx10GU5uAFEpEWlv5Dr-PGMzcutuGp/view?usp=sharing)
+
+Presentation can be found here: [Presentation](https://docs.google.com/presentation/d/1zyLhEwUCPqXkEYuYKmurgldnpplIiEG4/edit?usp=sharing&ouid=100433825166515123610&rtpof=true&sd=true)
 
 ## 🧬 Overview
 
@@ -8,6 +13,7 @@ This project explores the genetic diversity and evolutionary relationships of *P
 ---
 
 ### Prerequisites
+
 - Linux Operating system
 - Bash shell
 - Tools installed :
@@ -24,9 +30,11 @@ This project explores the genetic diversity and evolutionary relationships of *P
   - Snippy
 
 ### Installation
+
 To set up the environment and install the necessary tools, follow these steps:
 
 #### Step 1: Install Conda or Mamba
+
 If Conda or Mamba is not already installed on your system, follow the instructions below:
 
 - **Install Conda**:
@@ -34,24 +42,31 @@ If Conda or Mamba is not already installed on your system, follow the instructio
 
 - **Install Mamba** (optional but faster alternative to Conda):
   After installing Conda, you can install Mamba using:
-  ```bash
+
+```bash
   conda install -n base -c conda-forge mamba
   ```
 
 #### Step 2: Create a Conda Environment
+
 Create a new environment for the pipeline and install the required tools:
+
 ```bash
 conda create -n NGS-pipeline -c bioconda busco quast ragtag repeatmasker augustus eggnog-mapper orthofinder mafft fasttree mummer snippy
 ```
 
 #### Step 3: Activate the Environment
+
 Activate the newly created environment:
+
 ```bash
 conda activate NGS-pipeline
 ```
 
 #### Step 4: Verify Installation
+
 Ensure all tools are installed and accessible:
+
 ```bash
 busco --version
 quast --version
@@ -67,6 +82,7 @@ snippy --version
 ```
 
 #### Step 5: Run the Pipeline
+
 Follow the methodology outlined in the **Methodology** section to execute the pipeline scripts.
 
 ## 🎯 Objectives
@@ -79,44 +95,58 @@ Follow the methodology outlined in the **Methodology** section to execute the pi
 ## 🧪 Methodology
 
 ### 1. **Data Acquisition**
+
 - Genome sequences were downloaded from the [NCBI Genome Database](https://www.ncbi.nlm.nih.gov/datasets/genome/?taxon=5297).
 
 ### 2. **Quality Assessment**
+
 - **BUSCO**: Evaluated genome completeness.
 - **QUAST**: Provided assembly statistics and quality reports.
 
 ### 3. **Genome Processing**
+
 - **RagTag**: Scaffolded draft genomes using reference-based alignment.
 - **RepeatMasker**: Identified and masked repetitive elements.
 - **Augustus**: Predicted genes within the masked genome assemblies.
 
 ### 4. **Functional Annotation**
+
 - **EggNOG-mapper**: Annotated predicted genes based on orthologous group assignment and functional domains.
 
 ### 5. **Phylogenetic Analysis**
+
 - **OrthoFinder**: Identified orthologous gene clusters and single-copy orthologs.
 - **MAFFT**: Performed multiple sequence alignment of single-copy orthologs.
 - **FastTree**: Generated a phylogenetic tree from the aligned sequences.
 - **iTOL**: Visualized and interpreted the resulting phylogenetic tree.
 
 ### 6. **Comparative Genomics**
+
 - **MUMmer**: Conducted whole-genome alignment across strains to detect large-scale structural variations.
 - **Snippy**: Performed variant calling to identify SNPs and INDELs.
 
 ![Methodology](./Outputs/Research_design.png)
+
 ---
 
 ---
+
 #### 📊 Results
+
 ##### Quality Control
+
 ![Busco Results](./Outputs/Quality_Control/busco_results/Busco_summary.png)
+
 ---
+
 ##### Phylogenetic Analysis
+
 ![Phylogenetic Tree](./Outputs/Phylo_analysis/phylo_tree.png)
 
 ![Evoution](./Outputs/Phylo_analysis/evolution_tree_phylo.png)
 
 ##### Genome Clustering and Ortholog Analysis
+
 ![Clustering](./Outputs/Phylo_analysis/cluster-venn.png)
 
 ![Venn](./Outputs/Phylo_analysis/ortholo_analysis.png)
@@ -126,12 +156,15 @@ Follow the methodology outlined in the **Methodology** section to execute the pi
 ![Pairwise](./Outputs/Phylo_analysis/orthologus_analysis.png)
 
 ##### Comparative Genomics
+
 ##### Whole-Genome Alignment
+
 ![Alignment](./Outputs/comp_genomics/Alignment.png)
 
-
 ##### SNPs and INDELs Distribution
+
 ![Snippy Results](./Outputs/comp_genomics/SNPS_distribution.png)
+
 --
 
 ## 📚 References
@@ -183,4 +216,3 @@ Genomics/
 ├── variants/              # Snippy results (SNPs, INDELs)
 └── README.md              # This file
 ```
-
